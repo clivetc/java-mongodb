@@ -19,7 +19,20 @@ public class Student {
     private String email;
     private Gender gender;
     private Address address;
-    private List<String> favouriteSubjects;
+    private List<String> favoriteSubjects;
     private BigDecimal totalSpentInBooks;
-    private ZonedDateTime createdAt;
+    private LocalDateTime createdAt;
+
+    public Student( String firstName, String lastName, String email, Gender gender, Address address, List<String> favoriteSubjects, BigDecimal totalSpentInBooks, ZonedDateTime createdAt) {
+
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.gender = gender;
+        this.address = address;
+        this.favoriteSubjects = favoriteSubjects;
+        this.totalSpentInBooks = totalSpentInBooks;
+        this.createdAt = createdAt;
+    }
+    
 }
