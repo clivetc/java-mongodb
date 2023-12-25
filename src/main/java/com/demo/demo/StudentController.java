@@ -30,13 +30,12 @@ public class StudentController {
 
     @PostMapping(path="{studentId}")
     public void updateStudent(@PathVariable("studentId") String studentId,
-                                  @RequestParam(required = false) String firstName,
-                              @RequestParam(required = false) String lastName,
-                              @RequestParam(required = false) String email,
-
-                                        @RequestParam(required = false) Address address,
-                                          @RequestParam(required = false) List<String> favoriteSubjects,
-                                          @RequestParam(required = false) BigDecimal totalSpentInBooks){
+                            @RequestParam(required = false) String firstName,
+                            @RequestParam(required = false) String lastName,
+                            @RequestParam(required = false) String email,
+                            @RequestParam(required = false) Address address,
+                            @RequestParam(required = false) List<String> favoriteSubjects,
+                            @RequestParam(required = false) BigDecimal totalSpentInBooks){
         studentService.updateStudent(studentId,firstName,lastName,email,address,favoriteSubjects,totalSpentInBooks);
     }
 }
