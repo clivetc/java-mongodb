@@ -1,4 +1,4 @@
-package com.demo.demo;
+package com.demo.demo.Student;
 
 public enum Gender {
     MALE, FEMALE

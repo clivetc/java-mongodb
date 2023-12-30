@@ -1,5 +1,6 @@
-package com.demo.demo;
+package com.demo.demo.Student;
 
+import com.demo.demo.repository.StudentRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
